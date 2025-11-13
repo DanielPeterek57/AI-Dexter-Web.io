@@ -1,0 +1,189 @@
+/* ====== GLOBÁLNÍ NASTAVENÍ ====== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: url('https://images.wallpapersden.com/image/download/michael-c-hall-dexter-morgan-dexter_amZqam6UmZqaraWkpJRmbmdlrWZlbWU.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+/* ====== HLAVIČKA ====== */
+header {
+  background: rgba(128, 0, 0, 0.9);
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  border-bottom: 3px solid #ff0000;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0;
+  text-shadow: 0 0 10px #ff0000;
+  font-size: 2em;
+}
+
+/* ====== NAVIGACE ====== */
+nav {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background: rgba(255, 0, 0, 0.2);
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background: #ff0000;
+  box-shadow: 0 0 15px #ff0000;
+}
+
+/* ====== HLAVNÍ OBSAH ====== */
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 25px;
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.3);
+}
+
+h2 {
+  color: #ff4d4d;
+  border-bottom: 1px solid #ff4d4d;
+  padding-bottom: 6px;
+  margin-top: 25px;
+  font-size: 1.6em;
+}
+
+p, li {
+  line-height: 1.7;
+  font-size: 17px;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 25px;
+}
+
+/* ====== OBRÁZKY ====== */
+img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin: 15px 0 25px 0;
+  border: 2px solid #ff0000;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+}
+
+/* ====== PATIČKA ====== */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #bbb;
+  background: rgba(0, 0, 0, 0.9);
+  border-top: 2px solid #ff0000;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+/* ====== MOBILNÍ OPTIMALIZACE ====== */
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll; /* Lepší výkon na mobilech */
+  }
+
+  header {
+    padding: 15px 8px;
+  }
+
+  h1 {
+    font-size: 1.6em;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    width: 80%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  main {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  p, li {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 1.4em;
+  }
+}
+
+/* ====== EXTRA PRO MALÉ TELEFONY ====== */
+@media (max-width: 480px) {
+  nav a {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  main {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.4em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  p, li {
+    font-size: 15px;
+  }
+}
+/* ====== OPRAVA PATIČKY ====== */
+
+/* Tělo a stránka mají zabírat celou výšku obrazovky */
+html, body {
+  height: 100%;
+}
+
+/* Struktura pro lepší rozložení obsahu */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hlavní obsah se roztáhne, aby footer zůstal dole */
+main {
+  flex: 1;
+}
+
+/* Footer zůstává dole, ale ne překrývá obsah */
+footer {
+  margin-top: auto;
+}
