@@ -1,4 +1,4 @@
-# AI-Dexter-Web
+# [AI-Dexter-Web](https://danielpeterek57.github.io/AI-Dexter-Web.io)
 Použité Ai
 ChatGPT (GPT-5 mini) – tvorba HTML a CSS
 
