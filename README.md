@@ -1,14 +1,6 @@
 # AI-Dexter-Web
-Nástroje
-
-Textový editor – např. VS Code
-
-Prohlížeč – náhled webu
-
+Použité Ai
 ChatGPT (GPT-5 mini) – tvorba HTML a CSS
-
-Internet – hledání volně dostupných obrázků 
-
 
  Prompt a komunikace s ChatGPT
 1.  potřebuju stranku a potřebuju porad na jake tema bude to wed o 3 stránkách
